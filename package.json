@@ -1,0 +1,46 @@
+{
+  "name": "threejs-interactive-gallery",
+  "version": "1.0.0",
+  "description": "Three.js Interactive Gallery - 一个现代化的Three.js交互式展示平台，包含核心功能演示、高级特效和实验性功能",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.88.13",
+    "@react-three/fiber": "^8.15.11",
+    "@react-three/postprocessing": "^2.19.1",
+    "framer-motion": "^10.16.4",
+    "gsap": "^3.12.2",
+    "leva": "^0.9.35",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0",
+    "styled-components": "^6.1.1",
+    "three": "^0.158.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/three": "^0.158.3",
+    "@vitejs/plugin-react": "^4.1.1",
+    "vite": "^4.5.0",
+    "vite-plugin-glsl": "^1.1.2"
+  },
+  "keywords": [
+    "threejs",
+    "webgl",
+    "3d",
+    "interactive",
+    "gallery",
+    "react",
+    "responsive",
+    "modern",
+    "showcase",
+    "experiments"
+  ],
+  "author": "Three.js Interactive Gallery Team",
+  "license": "MIT"
+}
