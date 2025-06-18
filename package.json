@@ -1,4 +1,4 @@
-{
+ca{
   "name": "threejs-interactive-gallery",
   "version": "1.0.0",
   "description": "Three.js Interactive Gallery - 一个现代化的Three.js交互式展示平台，包含核心功能演示、高级特效和实验性功能",
@@ -41,6 +41,6 @@
     "showcase",
     "experiments"
   ],
-  "author": "Three.js Interactive Gallery Team",
+  "author": "danneshca",
   "license": "MIT"
 }
