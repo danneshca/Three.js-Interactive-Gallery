@@ -205,14 +205,6 @@ threejs-interactive-gallery/
 - [React](https://reactjs.org/) - 用户界面框架
 - [Vite](https://vitejs.dev/) - 快速构建工具
 
-## 📞 联系我们
-
-- 项目主页：[GitHub Repository](https://github.com/your-username/threejs-interactive-gallery)
-- 问题反馈：[Issues](https://github.com/your-username/threejs-interactive-gallery/issues)
-- 讨论交流：[Discussions](https://github.com/your-username/threejs-interactive-gallery/discussions)
-
----
-
 ⭐ 如果这个项目对你有帮助，请给我们一个星标！
 
 **Happy Coding! 🚀**
