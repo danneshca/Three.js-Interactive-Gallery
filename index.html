@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Three.js Interactive Gallery - 交互式3D展示平台</title>
     <meta name="description" content="探索Three.js的无限可能 - 交互式3D展示平台，包含核心功能、高级特效和实验性功能演示" />
+    
+    <!-- GitHub Pages SPA 路由支持 -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     <style>
       * {
         margin: 0;
@@ -53,13 +77,13 @@
         100% { transform: rotate(360deg); }
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-7ed62dc2.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/three-vendor-1aa2ed72.js">
-    <link rel="modulepreload" crossorigin href="/assets/react-three-vendor-611369f6.js">
-    <link rel="modulepreload" crossorigin href="/assets/react-vendor-85bd556e.js">
-    <link rel="modulepreload" crossorigin href="/assets/style-vendor-32f1d845.js">
-    <link rel="modulepreload" crossorigin href="/assets/animation-vendor-a22bc070.js">
-    <link rel="stylesheet" href="/assets/index-d28de7b7.css">
+    <script type="module" crossorigin src="/threejs-interactive-gallery/assets/index-097b97a8.js"></script>
+    <link rel="modulepreload" crossorigin href="/threejs-interactive-gallery/assets/three-vendor-1aa2ed72.js">
+    <link rel="modulepreload" crossorigin href="/threejs-interactive-gallery/assets/react-three-vendor-8ce1f887.js">
+    <link rel="modulepreload" crossorigin href="/threejs-interactive-gallery/assets/react-vendor-4eb53a8b.js">
+    <link rel="modulepreload" crossorigin href="/threejs-interactive-gallery/assets/style-vendor-f8a8899f.js">
+    <link rel="modulepreload" crossorigin href="/threejs-interactive-gallery/assets/animation-vendor-2dec0a74.js">
+    <link rel="stylesheet" href="/threejs-interactive-gallery/assets/index-d28de7b7.css">
   </head>
   <body>
     <div id="root">
