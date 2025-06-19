@@ -1,10 +1,10 @@
-import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-611369f6.js";import{d as t}from"./style-vendor-32f1d845.js";import{X as j}from"./three-vendor-1aa2ed72.js";import{m as r}from"./animation-vendor-a22bc070.js";const T=t.div`
+import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-611369f6.js";import{d as t}from"./style-vendor-32f1d845.js";import{X as j}from"./three-vendor-1aa2ed72.js";import{m as r}from"./animation-vendor-a22bc070.js";import{b as T}from"./react-vendor-85743a1d.js";const k=t.div`
   width: 100vw;
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-`,k=t.div`
+`,M=t.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -19,7 +19,7 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
   @media (max-width: 576px) {
     height: 70vh;
   }
-`,M=t.div`
+`,C=t.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -46,7 +46,7 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
   text-align: center;
   margin-bottom: 4rem;
   pointer-events: auto;
-`,C=t(r.h1)`
+`,z=t(r.h1)`
   font-size: clamp(2rem, 8vw, 4rem);
   font-weight: 700;
   background: linear-gradient(135deg, #00ffff, #ffffff, #ff6b6b);
@@ -64,7 +64,7 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
   @media (max-width: 576px) {
     margin-bottom: 0.5rem;
   }
-`,z=t(r.p)`
+`,R=t(r.p)`
   font-size: clamp(1rem, 3vw, 1.5rem);
   color: var(--text-secondary);
   margin-bottom: 2rem;
@@ -81,7 +81,7 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
     margin-bottom: 1rem;
     max-width: 95%;
   }
-`,R=t(r.div)`
+`,I=t(r.div)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -104,7 +104,7 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
     gap: 0.75rem;
     padding: 0 0.5rem;
   }
-`,I=t(r.div)`
+`,F=t(r.div)`
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -153,18 +153,18 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
       border-color: var(--accent-color);
     }
   }
-`,F=t.div`
+`,P=t.div`
   font-size: 3rem;
   margin-bottom: 1rem;
-`,P=t.h3`
+`,V=t.h3`
   font-size: 1.5rem;
   color: var(--text-primary);
   margin-bottom: 1rem;
-`,V=t.p`
+`,A=t.p`
   color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.6;
-`,A=t(r.div)`
+`,D=t(r.div)`
   position: absolute;
   bottom: 2rem;
   left: 50%;
@@ -183,7 +183,7 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
     color: var(--accent-color);
     transform: translateX(-50%) translateY(-5px);
   }
-`,D=t(r.div)`
+`,G=t(r.div)`
   width: 100%;
   min-height: 100vh;
   padding: 4rem 2rem;
@@ -220,7 +220,7 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
   @media (max-width: 576px) {
     margin-bottom: 1rem;
   }
-`,G=t(r.div)`
+`,Y=t(r.div)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -241,7 +241,7 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
   @media (max-width: 576px) {
     gap: 0.75rem;
   }
-`,Y=t(r.div)`
+`,L=t(r.div)`
   background: var(--glass-bg);
   backdrop-filter: blur(15px);
   border: 1px solid var(--glass-border);
@@ -305,26 +305,26 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
       border-color: var(--accent-color);
     }
   }
-`,L=t.div`
+`,H=t.div`
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
   filter: drop-shadow(0 0 10px currentColor);
-`,H=t.h3`
+`,B=t.h3`
   font-size: 1.4rem;
   color: var(--text-primary);
   margin-bottom: 1rem;
   font-weight: 600;
-`,B=t.p`
+`,O=t.p`
   color: var(--text-secondary);
   font-size: 0.95rem;
   line-height: 1.7;
   margin-bottom: 1.5rem;
-`,O=t.div`
+`,X=t.div`
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: center;
-`,X=t.span`
+`,E=t.span`
   background: rgba(0, 255, 255, 0.1);
   color: var(--accent-color);
   padding: 0.3rem 0.8rem;
@@ -332,7 +332,7 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
   font-size: 0.8rem;
   font-weight: 500;
   border: 1px solid rgba(0, 255, 255, 0.2);
-`,E=t(r.div)`
+`,W=t(r.div)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
@@ -351,7 +351,7 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
     gap: 0.75rem;
     margin-top: 1rem;
   }
-`,W=t(r.div)`
+`,N=t(r.div)`
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
@@ -401,5 +401,5 @@ import{j as e,C as v,r as x,S as w,O as b,u as y}from"./react-three-vendor-61136
 `,J=t.span`
   font-size: 0.8rem;
   color: var(--text-muted);
-`;function K(){const c=x.useRef(),i=5e3,a=new Float32Array(i*3),n=new Float32Array(i*3);for(let o=0;o<i;o++){const s=o*3,l=Math.random()*20,m=l*.3,p=o%3*(Math.PI*2/3),g=Math.pow(Math.random(),3)*(Math.random()<.5?1:-1),u=Math.pow(Math.random(),3)*(Math.random()<.5?1:-1),f=Math.pow(Math.random(),3)*(Math.random()<.5?1:-1);a[s]=Math.cos(p+m)*l+g,a[s+1]=u,a[s+2]=Math.sin(p+m)*l+f;const d=new j;d.setHSL(.5+Math.random()*.3,.8,.6),n[s]=d.r,n[s+1]=d.g,n[s+2]=d.b}return y(o=>{c.current&&(c.current.rotation.y=o.clock.elapsedTime*.05)}),e.jsxs("points",{ref:c,children:[e.jsxs("bufferGeometry",{children:[e.jsx("bufferAttribute",{attach:"attributes-position",count:i,array:a,itemSize:3}),e.jsx("bufferAttribute",{attach:"attributes-color",count:i,array:n,itemSize:3})]}),e.jsx("pointsMaterial",{size:.05,sizeAttenuation:!0,vertexColors:!0,transparent:!0,alphaTest:.001,depthWrite:!1})]})}const N=[{icon:"🎯",title:"核心模块",description:"场景、相机、光照、材质等基础功能展示",path:"/core/scene-camera"},{icon:"⚡",title:"拓展模块",description:"粒子系统、动画、后期处理等高级特效",path:"/advanced/particles"},{icon:"🔬",title:"实验功能",description:"多视角、协作等前沿技术探索",path:"/experiments/multiviewport"}],q=[{icon:"🎮",title:"交互式场景控制",description:"完整的场景管理系统，支持多相机切换、动态光照调节和实时渲染参数控制",tags:["Scene","Camera","Controls"],path:"/core/scene-camera"},{icon:"💡",title:"高级光照系统",description:"包含环境光、方向光、点光源、聚光灯等多种光照类型，支持阴影和光照贴图",tags:["Lighting","Shadows","IBL"],path:"/core/lighting"},{icon:"🎨",title:"材质与纹理",description:"丰富的材质库，支持PBR材质、程序化纹理生成和材质编辑器",tags:["PBR","Textures","Materials"],path:"/core/materials"},{icon:"🔺",title:"几何体展示",description:"基础几何体到复杂模型的展示，包含程序化几何体生成和变形动画",tags:["Geometry","Procedural","Morphing"],path:"/core/geometry"},{icon:"🏗️",title:"3D模型加载",description:"支持多种3D模型格式，包含模型优化、LOD系统和批量加载管理",tags:["GLTF","FBX","OBJ","LOD"],path:"/core/models"},{icon:"✨",title:"粒子系统",description:"高性能粒子系统，支持GPU粒子、物理模拟和复杂粒子行为",tags:["Particles","GPU","Physics"],path:"/advanced/particles"},{icon:"🎬",title:"动画系统",description:"骨骼动画、关键帧动画、变形动画和动画混合系统",tags:["Animation","Skeletal","Keyframe"],path:"/advanced/animation"},{icon:"🎭",title:"后期处理",description:"丰富的后期处理效果，包含景深、辉光、色调映射等视觉增强",tags:["Post-processing","DOF","Bloom"],path:"/advanced/postprocessing"},{icon:"🧪",title:"Shader实验",description:"自定义着色器开发，包含顶点着色器、片段着色器和计算着色器",tags:["Shaders","GLSL","Custom"],path:"/advanced/shaders"},{icon:"🏔️",title:"地形生成",description:"程序化地形生成系统，支持高度图、纹理混合和植被分布",tags:["Terrain","Procedural","Heightmap"],path:"/advanced/terrain"},{icon:"🥽",title:"WebXR体验",description:"VR/AR支持，沉浸式3D体验和手势交互系统",tags:["WebXR","VR","AR"],path:"/advanced/webxr"},{icon:"📱",title:"多视角系统",description:"多视口渲染、画中画效果和自定义视角管理",tags:["Multi-viewport","PiP","Views"],path:"/experiments/multiviewport"}],Q=[{icon:"⚛️",name:"React",version:"18.x"},{icon:"🎯",name:"Three.js",version:"0.158+"},{icon:"🔧",name:"React Three Fiber",version:"8.x"},{icon:"🎨",name:"React Three Drei",version:"9.x"},{icon:"⚡",name:"Vite",version:"5.x"},{icon:"💫",name:"Framer Motion",version:"10.x"},{icon:"🎭",name:"Styled Components",version:"6.x"},{icon:"🔀",name:"React Router",version:"6.x"}];function ie(){const c=()=>{const i=document.getElementById("explore-more-section");i&&i.scrollIntoView({behavior:"smooth"})};return e.jsxs(T,{children:[e.jsxs("div",{style:{position:"relative",height:"100vh"},children:[e.jsx(k,{children:e.jsx(v,{camera:{position:[0,0,10],fov:75},gl:{antialias:!0,alpha:!0},children:e.jsxs(x.Suspense,{fallback:null,children:[e.jsx(K,{}),e.jsx(w,{radius:100,depth:50,count:1e3,factor:4,saturation:0,fade:!0}),e.jsx(b,{enableZoom:!1,enablePan:!1,autoRotate:!0,autoRotateSpeed:.5})]})})}),e.jsxs(M,{children:[e.jsxs(S,{initial:{opacity:0,y:50},animate:{opacity:1,y:0},transition:{duration:1,delay:.5},children:[e.jsx(C,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},transition:{duration:1,delay:.7},children:"Three.js 展示平台"}),e.jsx(z,{initial:{opacity:0,y:30},animate:{opacity:1,y:0},transition:{duration:1,delay:.9},children:"探索 WebGL 的无限可能，体验交互式 3D 图形的魅力"})]}),e.jsx(R,{initial:{opacity:0,y:50},animate:{opacity:1,y:0},transition:{duration:1,delay:1.1},children:N.map((i,a)=>e.jsxs(I,{initial:{opacity:0,y:30},animate:{opacity:1,y:0},transition:{duration:.6,delay:1.3+a*.2},whileHover:{scale:1.05},whileTap:{scale:.95},as:r.div,onClick:()=>window.location.href=i.path,children:[e.jsx(F,{children:i.icon}),e.jsx(P,{children:i.title}),e.jsx(V,{children:i.description})]},a))}),e.jsxs(A,{initial:{opacity:0},animate:{opacity:1},transition:{duration:1,delay:2},onClick:c,children:[e.jsx("span",{children:"探索更多"}),e.jsx(r.div,{animate:{y:[0,10,0]},transition:{duration:2,repeat:1/0},children:"↓"})]})]})]}),e.jsxs(D,{id:"explore-more-section",initial:{opacity:0},whileInView:{opacity:1},transition:{duration:1},viewport:{once:!0,margin:"-100px"},children:[e.jsx(h,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},transition:{duration:.8},viewport:{once:!0},children:"功能特性详览"}),e.jsx(G,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},transition:{duration:.8,delay:.2},viewport:{once:!0},children:q.map((i,a)=>e.jsxs(Y,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},transition:{duration:.6,delay:a*.1},viewport:{once:!0},whileHover:{scale:1.02},whileTap:{scale:.98},onClick:()=>window.location.href=i.path,children:[e.jsx(L,{children:i.icon}),e.jsx(H,{children:i.title}),e.jsx(B,{children:i.description}),e.jsx(O,{children:i.tags.map((n,o)=>e.jsx(X,{children:n},o))})]},a))}),e.jsx(h,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},transition:{duration:.8},viewport:{once:!0},style:{marginTop:"4rem"},children:"技术栈"}),e.jsx(E,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},transition:{duration:.8,delay:.2},viewport:{once:!0},children:Q.map((i,a)=>e.jsxs(W,{initial:{opacity:0,scale:.8},whileInView:{opacity:1,scale:1},transition:{duration:.5,delay:a*.1},viewport:{once:!0},whileHover:{scale:1.05},children:[e.jsx(U,{children:i.icon}),e.jsx(Z,{children:i.name}),e.jsx(J,{children:i.version})]},a))})]})]})}export{ie as default};
-//# sourceMappingURL=Home-ae70185e.js.map
+`;function K(){const c=x.useRef(),n=5e3,s=new Float32Array(n*3),i=new Float32Array(n*3);for(let a=0;a<n;a++){const o=a*3,d=Math.random()*20,m=d*.3,p=a%3*(Math.PI*2/3),g=Math.pow(Math.random(),3)*(Math.random()<.5?1:-1),u=Math.pow(Math.random(),3)*(Math.random()<.5?1:-1),f=Math.pow(Math.random(),3)*(Math.random()<.5?1:-1);s[o]=Math.cos(p+m)*d+g,s[o+1]=u,s[o+2]=Math.sin(p+m)*d+f;const l=new j;l.setHSL(.5+Math.random()*.3,.8,.6),i[o]=l.r,i[o+1]=l.g,i[o+2]=l.b}return y(a=>{c.current&&(c.current.rotation.y=a.clock.elapsedTime*.05)}),e.jsxs("points",{ref:c,children:[e.jsxs("bufferGeometry",{children:[e.jsx("bufferAttribute",{attach:"attributes-position",count:n,array:s,itemSize:3}),e.jsx("bufferAttribute",{attach:"attributes-color",count:n,array:i,itemSize:3})]}),e.jsx("pointsMaterial",{size:.05,sizeAttenuation:!0,vertexColors:!0,transparent:!0,alphaTest:.001,depthWrite:!1})]})}const q=[{icon:"🎯",title:"核心模块",description:"场景、相机、光照、材质等基础功能展示",path:"/core/scene-camera"},{icon:"⚡",title:"拓展模块",description:"粒子系统、动画、后期处理等高级特效",path:"/advanced/particles"},{icon:"🔬",title:"实验功能",description:"多视角、协作等前沿技术探索",path:"/experiments/multiviewport"}],Q=[{icon:"🎮",title:"交互式场景控制",description:"完整的场景管理系统，支持多相机切换、动态光照调节和实时渲染参数控制",tags:["Scene","Camera","Controls"],path:"/core/scene-camera"},{icon:"💡",title:"高级光照系统",description:"包含环境光、方向光、点光源、聚光灯等多种光照类型，支持阴影和光照贴图",tags:["Lighting","Shadows","IBL"],path:"/core/lighting"},{icon:"🎨",title:"材质与纹理",description:"丰富的材质库，支持PBR材质、程序化纹理生成和材质编辑器",tags:["PBR","Textures","Materials"],path:"/core/materials"},{icon:"🔺",title:"几何体展示",description:"基础几何体到复杂模型的展示，包含程序化几何体生成和变形动画",tags:["Geometry","Procedural","Morphing"],path:"/core/geometry"},{icon:"🏗️",title:"3D模型加载",description:"支持多种3D模型格式，包含模型优化、LOD系统和批量加载管理",tags:["GLTF","FBX","OBJ","LOD"],path:"/core/models"},{icon:"✨",title:"粒子系统",description:"高性能粒子系统，支持GPU粒子、物理模拟和复杂粒子行为",tags:["Particles","GPU","Physics"],path:"/advanced/particles"},{icon:"🎬",title:"动画系统",description:"骨骼动画、关键帧动画、变形动画和动画混合系统",tags:["Animation","Skeletal","Keyframe"],path:"/advanced/animation"},{icon:"🎭",title:"后期处理",description:"丰富的后期处理效果，包含景深、辉光、色调映射等视觉增强",tags:["Post-processing","DOF","Bloom"],path:"/advanced/postprocessing"},{icon:"🧪",title:"Shader实验",description:"自定义着色器开发，包含顶点着色器、片段着色器和计算着色器",tags:["Shaders","GLSL","Custom"],path:"/advanced/shaders"},{icon:"🏔️",title:"地形生成",description:"程序化地形生成系统，支持高度图、纹理混合和植被分布",tags:["Terrain","Procedural","Heightmap"],path:"/advanced/terrain"},{icon:"🥽",title:"WebXR体验",description:"VR/AR支持，沉浸式3D体验和手势交互系统",tags:["WebXR","VR","AR"],path:"/advanced/webxr"},{icon:"📱",title:"多视角系统",description:"多视口渲染、画中画效果和自定义视角管理",tags:["Multi-viewport","PiP","Views"],path:"/experiments/multiviewport"}],_=[{icon:"⚛️",name:"React",version:"18.x"},{icon:"🎯",name:"Three.js",version:"0.158+"},{icon:"🔧",name:"React Three Fiber",version:"8.x"},{icon:"🎨",name:"React Three Drei",version:"9.x"},{icon:"⚡",name:"Vite",version:"5.x"},{icon:"💫",name:"Framer Motion",version:"10.x"},{icon:"🎭",name:"Styled Components",version:"6.x"},{icon:"🔀",name:"React Router",version:"6.x"}];function re(){const c=T(),n=()=>{const i=document.getElementById("explore-more-section");i&&i.scrollIntoView({behavior:"smooth"})},s=i=>{c(i)};return e.jsxs(k,{children:[e.jsxs("div",{style:{position:"relative",height:"100vh"},children:[e.jsx(M,{children:e.jsx(v,{camera:{position:[0,0,10],fov:75},gl:{antialias:!0,alpha:!0},children:e.jsxs(x.Suspense,{fallback:null,children:[e.jsx(K,{}),e.jsx(w,{radius:100,depth:50,count:1e3,factor:4,saturation:0,fade:!0}),e.jsx(b,{enableZoom:!1,enablePan:!1,autoRotate:!0,autoRotateSpeed:.5})]})})}),e.jsxs(C,{children:[e.jsxs(S,{initial:{opacity:0,y:50},animate:{opacity:1,y:0},transition:{duration:1,delay:.5},children:[e.jsx(z,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},transition:{duration:1,delay:.7},children:"Three.js 展示平台"}),e.jsx(R,{initial:{opacity:0,y:30},animate:{opacity:1,y:0},transition:{duration:1,delay:.9},children:"探索 WebGL 的无限可能，体验交互式 3D 图形的魅力"})]}),e.jsx(I,{initial:{opacity:0,y:50},animate:{opacity:1,y:0},transition:{duration:1,delay:1.1},children:q.map((i,a)=>e.jsxs(F,{initial:{opacity:0,y:30},animate:{opacity:1,y:0},transition:{duration:.6,delay:1.3+a*.2},whileHover:{scale:1.05},whileTap:{scale:.95},as:r.div,onClick:()=>s(i.path),children:[e.jsx(P,{children:i.icon}),e.jsx(V,{children:i.title}),e.jsx(A,{children:i.description})]},a))}),e.jsxs(D,{initial:{opacity:0},animate:{opacity:1},transition:{duration:1,delay:2},onClick:n,children:[e.jsx("span",{children:"探索更多"}),e.jsx(r.div,{animate:{y:[0,10,0]},transition:{duration:2,repeat:1/0},children:"↓"})]})]})]}),e.jsxs(G,{id:"explore-more-section",initial:{opacity:0},whileInView:{opacity:1},transition:{duration:1},viewport:{once:!0,margin:"-100px"},children:[e.jsx(h,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},transition:{duration:.8},viewport:{once:!0},children:"功能特性详览"}),e.jsx(Y,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},transition:{duration:.8,delay:.2},viewport:{once:!0},children:Q.map((i,a)=>e.jsxs(L,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},transition:{duration:.6,delay:a*.1},viewport:{once:!0},whileHover:{scale:1.02},whileTap:{scale:.98},onClick:()=>s(i.path),children:[e.jsx(H,{children:i.icon}),e.jsx(B,{children:i.title}),e.jsx(O,{children:i.description}),e.jsx(X,{children:i.tags.map((o,d)=>e.jsx(E,{children:o},d))})]},a))}),e.jsx(h,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},transition:{duration:.8},viewport:{once:!0},style:{marginTop:"4rem"},children:"技术栈"}),e.jsx(W,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},transition:{duration:.8,delay:.2},viewport:{once:!0},children:_.map((i,a)=>e.jsxs(N,{initial:{opacity:0,scale:.8},whileInView:{opacity:1,scale:1},transition:{duration:.5,delay:a*.1},viewport:{once:!0},whileHover:{scale:1.05},children:[e.jsx(U,{children:i.icon}),e.jsx(Z,{children:i.name}),e.jsx(J,{children:i.version})]},a))})]})]})}export{re as default};
+//# sourceMappingURL=Home-2057fd13.js.map
