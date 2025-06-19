@@ -7,25 +7,24 @@ import styled from 'styled-components'
 import Navigation from './components/Navigation'
 import LoadingScreen from './components/LoadingScreen'
 
-// Pages
-import Home from './pages/Home'
-import SceneCamera from './pages/core/SceneCamera'
-import LightingSystem from './pages/core/LightingSystem'
-import MaterialTexture from './pages/core/MaterialTexture'
-import GeometryShowcase from './pages/core/GeometryShowcase'
-import ModelLoader from './pages/core/ModelLoader'
-import ParticleSystem from './pages/advanced/ParticleSystem'
-import AnimationSystem from './pages/advanced/AnimationSystem'
-import PostProcessing from './pages/advanced/PostProcessing'
-import ShaderExperiments from './pages/advanced/ShaderExperiments'
-import TerrainGeneration from './pages/advanced/TerrainGeneration'
-import WebXRExperience from './pages/advanced/WebXRExperience'
-
-import MultiViewport from './pages/experiments/MultiViewport'
-import MultiUserCollaboration from './pages/experiments/MultiUserCollaboration'
-import SceneExporter from './pages/experiments/SceneExporter'
-import ThreeDUIMenu from './pages/experiments/ThreeDUIMenu'
-import About from './pages/About'
+// Lazy load pages for code splitting
+const Home = React.lazy(() => import('./pages/Home'))
+const SceneCamera = React.lazy(() => import('./pages/core/SceneCamera'))
+const LightingSystem = React.lazy(() => import('./pages/core/LightingSystem'))
+const MaterialTexture = React.lazy(() => import('./pages/core/MaterialTexture'))
+const GeometryShowcase = React.lazy(() => import('./pages/core/GeometryShowcase'))
+const ModelLoader = React.lazy(() => import('./pages/core/ModelLoader'))
+const ParticleSystem = React.lazy(() => import('./pages/advanced/ParticleSystem'))
+const AnimationSystem = React.lazy(() => import('./pages/advanced/AnimationSystem'))
+const PostProcessing = React.lazy(() => import('./pages/advanced/PostProcessing'))
+const ShaderExperiments = React.lazy(() => import('./pages/advanced/ShaderExperiments'))
+const TerrainGeneration = React.lazy(() => import('./pages/advanced/TerrainGeneration'))
+const WebXRExperience = React.lazy(() => import('./pages/advanced/WebXRExperience'))
+const MultiViewport = React.lazy(() => import('./pages/experiments/MultiViewport'))
+const MultiUserCollaboration = React.lazy(() => import('./pages/experiments/MultiUserCollaboration'))
+const SceneExporter = React.lazy(() => import('./pages/experiments/SceneExporter'))
+const ThreeDUIMenu = React.lazy(() => import('./pages/experiments/ThreeDUIMenu'))
+const About = React.lazy(() => import('./pages/About'))
 
 const AppContainer = styled.div`
   width: 100vw;

@@ -13,7 +13,22 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    sourcemap: true
+    sourcemap: true,
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // 将 Three.js 相关库分离到单独的 chunk
+          'three-vendor': ['three'],
+          'react-three-vendor': ['@react-three/fiber', '@react-three/drei'],
+          // 将 React 相关库分离
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          // 将动画和样式库分离
+          'animation-vendor': ['framer-motion', 'gsap'],
+          'style-vendor': ['styled-components']
+        }
+      }
+    }
   },
   optimizeDeps: {
     include: ['three', '@react-three/fiber', '@react-three/drei']
