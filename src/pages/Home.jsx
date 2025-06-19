@@ -1,7 +1,7 @@
 import React, { Suspense, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, Stars, Text, Float } from '@react-three/drei'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import * as THREE from 'three'
@@ -669,11 +669,17 @@ const techStack = [
 ]
 
 function Home() {
+  const navigate = useNavigate()
+  
   const handleScrollToExplore = () => {
     const exploreSection = document.getElementById('explore-more-section')
     if (exploreSection) {
       exploreSection.scrollIntoView({ behavior: 'smooth' })
     }
+  }
+  
+  const handleModuleClick = (path) => {
+    navigate(path)
   }
 
   return (
@@ -734,7 +740,7 @@ function Home() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               as={motion.div}
-              onClick={() => window.location.href = module.path}
+              onClick={() => handleModuleClick(module.path)}
             >
                 <ModuleIcon>{module.icon}</ModuleIcon>
                 <ModuleTitle>{module.title}</ModuleTitle>
@@ -792,7 +798,7 @@ function Home() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => window.location.href = feature.path}
+              onClick={() => handleModuleClick(feature.path)}
             >
               <FeatureIcon>{feature.icon}</FeatureIcon>
               <FeatureTitle>{feature.title}</FeatureTitle>
