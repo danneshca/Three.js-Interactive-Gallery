@@ -2,10 +2,7 @@
   "name": "threejs-interactive-gallery",
   "version": "1.0.0",
   "description": "Three.js Interactive Gallery - 一个现代化的Three.js交互式展示平台，包含核心功能演示、高级特效和实验性功能",
-  "author": {
-    "name": "Danneshca",
-    "url": "https://github.com/danneshca"
-  },
+  
   "repository": {
     "type": "git",
     "url": "https://github.com/danneshca/Three.js-Interactive-Gallery.git"
@@ -14,17 +11,6 @@
   "bugs": {
     "url": "https://github.com/danneshca/Three.js-Interactive-Gallery/issues"
   },
-  "license": "MIT",
-  "keywords": [
-    "threejs",
-    "react",
-    "webgl",
-    "3d",
-    "interactive",
-    "gallery",
-    "showcase",
-    "demo"
-  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
