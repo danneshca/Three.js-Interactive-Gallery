@@ -843,6 +843,69 @@ function Home() {
             </TechItem>
           ))}
         </TechShowcase>
+        
+        <ExploreTitle
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          style={{ marginTop: '4rem' }}
+        >
+          关于作者
+        </ExploreTitle>
+        
+        <AuthorSection
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          <AuthorCard
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.02 }}
+          >
+            <AuthorAvatar>👨‍💻</AuthorAvatar>
+            <AuthorName>Danneshca</AuthorName>
+            <AuthorTitle>工业设计/全栈开发</AuthorTitle>
+            <AuthorLinks>
+              <AuthorLink
+                href="https://github.com/danneshca"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span>🔗</span> GitHub
+              </AuthorLink>
+              <AuthorLink
+                href="https://github.com/danneshca/Three.js-Interactive-Gallery"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span>⭐</span> 项目仓库
+              </AuthorLink>
+            </AuthorLinks>
+          </AuthorCard>
+          
+          <OpenSourceBadge
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.05 }}
+          >
+            <BadgeIcon>🌟</BadgeIcon>
+            <BadgeText>
+              <BadgeTitle>开源项目</BadgeTitle>
+              <BadgeDescription>本项目已在 GitHub 开源，欢迎 Star 和贡献代码！</BadgeDescription>
+            </BadgeText>
+          </OpenSourceBadge>
+        </AuthorSection>
       </ExploreMoreSection>
     </HomeContainer>
   )
