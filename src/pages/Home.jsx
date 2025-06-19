@@ -461,6 +461,197 @@ const TechVersion = styled.span`
   color: var(--text-muted);
 `
 
+// Author Section Styled Components
+const AuthorSection = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  @media (max-width: 576px) {
+    padding: 1rem;
+    gap: 1rem;
+  }
+`
+
+const AuthorCard = styled(motion.div)`
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    max-width: 350px;
+  }
+  
+  @media (max-width: 576px) {
+    padding: 1rem;
+    max-width: 300px;
+  }
+`
+
+const AuthorAvatar = styled.div`
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+  
+  @media (max-width: 576px) {
+    font-size: 2.5rem;
+  }
+`
+
+const AuthorName = styled.h3`
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+  
+  @media (max-width: 576px) {
+    font-size: 1.2rem;
+  }
+`
+
+const AuthorTitle = styled.p`
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  @media (max-width: 576px) {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+`
+
+const AuthorLinks = styled.div`
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  @media (max-width: 576px) {
+    gap: 0.8rem;
+  }
+`
+
+const AuthorLink = styled(motion.a)`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  background: linear-gradient(135deg, #00ffff, #ff6b6b);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 576px) {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+  }
+`
+
+const OpenSourceBadge = styled(motion.div)`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 1.5rem;
+  max-width: 500px;
+  width: 100%;
+  
+  @media (max-width: 768px) {
+    padding: 1.2rem;
+    gap: 0.8rem;
+  }
+  
+  @media (max-width: 576px) {
+    padding: 1rem;
+    gap: 0.6rem;
+    flex-direction: column;
+    text-align: center;
+  }
+`
+
+const BadgeIcon = styled.div`
+  font-size: 2rem;
+  
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+  
+  @media (max-width: 576px) {
+    font-size: 1.5rem;
+  }
+`
+
+const BadgeText = styled.div`
+  flex: 1;
+`
+
+const BadgeTitle = styled.h4`
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 576px) {
+    font-size: 0.9rem;
+  }
+`
+
+const BadgeDescription = styled.p`
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+  
+  @media (max-width: 576px) {
+    font-size: 0.75rem;
+  }
+`
+
 // 3D Components
 function GalaxyParticles() {
   const pointsRef = useRef()
